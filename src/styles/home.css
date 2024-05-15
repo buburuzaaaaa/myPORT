@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: pop;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+    background-color: #111;
+}
+@font-face {
+    font-family: pop;
+    src: url(./fonts/Poppins-Regular.ttf);
+}
+.flex-cont {
+    margin-top: 5%;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rev {
+    margin-top: 2rem;
+    flex-direction: row-reverse;
+    margin-bottom: 5rem;
+}
+
+.the-text {
+    width: 600px;
+}
+
+.the-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+    color: #eeeeee;
+}
+
+.the-text h5 {
+    color: #c0c0c0;
+    margin-top: 5px;
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+.the-text h5 span {
+    color: #404DBD;
+}
+
+.imagyo img {
+    height: 500px;
+    width: fit-content;
+    border-radius: 250px;
+}
+
+.opener-button {
+    height: 50px;
+    margin-top: 20px;
+    padding: 0 40px;
+    margin-right: 20px;
+    border: none;
+    color: #111;
+    background-color: #404DBD;
+    border-radius: 5px;
+    font-weight: 900;
+}
+
+.opener-button:hover {
+    background-color: #404DBD;
+    transition: 0.3s;
+}
+.sec-opener-button{
+    height: 50px;
+        margin-top: 20px;
+        padding: 0 40px;
+        margin-right: 20px;
+        border: 3px solid #404DBD;
+        color: #404DBD;
+        background-color: #111111;
+        border-radius: 5px;
+        font-weight: 900;
+}
+.below-scroll {
+    height: fit-content;
+    width: 100%;
+    z-index: 1;
+    background-color: #6880FF;
+}
+.also{
+    margin-bottom: 2rem;
+    margin-top: 0;
+}
+@media screen and (max-width: 1150px) {
+    .mobile-top{
+        margin-top: 15%;
+    }
+    .flex-cont {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .rev {
+        margin-top: 2rem;
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+    .the-text {
+        width: 80%;
+        text-align: center;
+    }
+
+    .the-text h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0;
+    }
+
+    .the-text h5 {
+        margin-top: 5px;
+        font-weight: 100;
+        font-size: 1rem;
+    }
+
+    .the-text h5 span {
+        text-decoration: underline;
+    }
+
+    .imagyo img {
+        height: 450px;
+    }
+}
+@media screen and (max-width: 600px) {
+.mobile-top {
+        margin-top: 25%;
+    }
+        .imagyo img {
+            height: 400px;
+            width: fit-content;
+            border-radius: 250px;
+        }
+        #giter{
+            display: none;
+        }
+}
